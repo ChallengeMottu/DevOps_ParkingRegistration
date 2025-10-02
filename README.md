@@ -58,6 +58,7 @@ Com essas entidades e funcionalidades, o **PulseSystem** oferece uma solução r
 
 <img width="1938" height="552" alt="Arquitetura da Solução Parking Registration drawio" src="https://github.com/user-attachments/assets/2664a095-7ed0-489d-85d4-33842e6094c2" />
 
+---
 
 ## Configuração do Banco **Azure SQL Server** na Aplicação 🏗️
 
@@ -97,6 +98,8 @@ na classe CollectionExtensions:
 ```bash
 options.UseSqlServer(configuration.GetConnectionString("SystemPulse"));
 ```
+
+---
 
 ## Criação do Banco de Dados 💾
 A aplicação pode ser configurada para criar o banco de dados de duas maneiras: utilizando Migrations do Entity Framework Core ou aplicando diretamente o script SQL presente no repositório. Abaixo estão as instruções detalhadas 
@@ -155,8 +158,6 @@ O arquivo script_bd.sql pode ser encontrado na raiz do repositório.
 ##### Passo 2: Executar o Script no Banco de Dados ⚙️
 1. Conecte-se ao seu banco de dados Azure SQL Database, pode ser no Query Editor da Azure
 2. Execute o conteúdo do script_bd.sql no banco de dados, e ele irá criar todas as tabelas e relacionamentos conforme o modelo do projeto.
-
----
 
 ---
 
