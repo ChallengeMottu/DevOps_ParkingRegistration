@@ -156,3 +156,77 @@ O arquivo script_bd.sql pode ser encontrado na raiz do repositório.
 1. Conecte-se ao seu banco de dados Azure SQL Database, pode ser no Query Editor da Azure
 2. Execute o conteúdo do script_bd.sql no banco de dados, e ele irá criar todas as tabelas e relacionamentos conforme o modelo do projeto.
 
+---
+
+---
+
+## Casos de Teste 🧪
+
+### Scripts de Testes efetuados
+
+
+
+#### **Cadastrando um Parking: (POST)**:
+```json
+{
+  "name": "Pátio Pinheiros",
+  "location": {
+    "street": "Rua Alfredo Neves",
+    "complement": "54",
+    "neighborhood": "Pinheiros",
+    "cep": "02563256",
+    "city": "São Paulo",
+    "state": "SP"
+  },
+  "availableArea": 50000,
+  "capacity": 500
+}
+```
+
+### **Atualizando um Parking: (PUT)**:
+```json
+{
+  
+      "name": "Pátio Pinheiros",
+      "location": {
+        "street": "Rua Alfredo Neves",
+        "complement": "555",
+        "neighborhood": "Pinheiros",
+        "cep": "02563256",
+        "city": "São Paulo",
+        "state": "SP"
+      },
+      "availableArea": 50000,
+      "capacity": 450
+}
+```
+
+#### **Cadastrando um Gateway: (POST)**:
+```json
+{
+  "model": "Modelo 21XX",
+  "status": 1,
+  "macAddress": "A1:B2:C3:D4:E5:F6",
+  "lastIP": "192.168.0.101",
+  "parkingId": 1
+}
+```
+
+#### **Cadastrando uma Zone: (POST)**:
+```json
+{
+  "name": "Zona Mottu E",
+  "description": "Alocação de motos modelo Mottu E",
+  "width": 70,
+  "length": 60,
+  "parkingId": 1
+}
+```
+---
+
+### 👥 Grupo Desenvolvedor
+
+- Gabriela Sousa Reis RM558830
+- Laura Amadeu Soares RM556690
+- Raphael Kim RM557914
+
