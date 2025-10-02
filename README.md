@@ -1,4 +1,4 @@
-# Pulse Registration System 🚗
+# Pulse Registration System 🚀
 
 ## Descrição da aplicação
 
